@@ -5,7 +5,7 @@ let services = {
             category: "MesadePartes",
             state: true,
             image: "assets/images/Icono_mesa_de_partes_virtual.png",
-            url: "https://apps.munisurco.gob.pe/pladigsurco/mpv_RegistraDocumento.aspx#no-back-button",
+            url: "//apps.munisurco.gob.pe/pladigsurco/mpv_RegistraDocumento.aspx#no-back-button",
             active: false,
             authenticate: false,
         },
@@ -14,7 +14,7 @@ let services = {
             category: "InformacionPublica",
             state: true,
             image: "assets/images/Icono_acceso_a_la_informacion_publical.png",
-            url: "https://apps.munisurco.gob.pe/pladigsurco/aip_RegistraSolicitud.aspx#no-back-button",
+            url: "//apps.munisurco.gob.pe/pladigsurco/aip_RegistraSolicitud.aspx#no-back-button",
             active: false,
             authenticate: false,
         },
@@ -104,7 +104,7 @@ let services = {
             category: "MesadePartes",
             state: true,
             image: "assets/images/Icono_documentacion_sustentatoria.png",
-            url: "https://apps.munisurco.gob.pe/pladigsurco/mpv_RegistraAnexo.aspx#no-back-button",
+            url: "//apps.munisurco.gob.pe/pladigsurco/mpv_RegistraAnexo.aspx#no-back-button",
             active: false,
             authenticate: false,
         },
@@ -113,7 +113,7 @@ let services = {
             category: "MesadePartes",
             state: true,
             image: "assets/images/Icono_subsanar_documentacion.png",
-            url: "https://apps.munisurco.gob.pe/pladigsurco/mpv_RegistraSubsanacion.aspx#no-back-button",
+            url: "//apps.munisurco.gob.pe/pladigsurco/mpv_RegistraSubsanacion.aspx#no-back-button",
             active: false,
             authenticate: false,
         },
@@ -122,7 +122,7 @@ let services = {
             category: "MesadePartes",
             state: true,
             image: "assets/images/Icono_mis_documentosl.png",
-            url: "https://apps.munisurco.gob.pe/pladigsurco/mpv_MisDocumentos.aspx#no-back-button",
+            url: "//apps.munisurco.gob.pe/pladigsurco/mpv_MisDocumentos.aspx#no-back-button",
             active: false,
             authenticate: false,
         }
@@ -260,4 +260,3 @@ function filterService(value) {
 window.onload = () => {
     filterService("Todas");
 };
-

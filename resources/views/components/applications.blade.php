@@ -53,7 +53,7 @@
             </button>
         </div>
     </div>
-    <div class="grid grid-cols-2 justify-items-center md:grid-cols-3 gap-4 text-center px-96" id="servicios"></div>
+    <div class="grid grid-cols-2 justify-items-center md:grid-cols-4 gap-4 text-center px-96" id="servicios"></div>
 
 
 {{--    <div class="grid grid-cols-2 justify-items-center md:grid-cols-3 gap-4 text-center px-96">--}}

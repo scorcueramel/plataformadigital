@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 md:grid-cols-5 px-32 py-24 bg-[#005EA5]">
+<div class="grid grid-cols-2 md:grid-cols-5 px-44 py-24 bg-[#005EA5]">
     <div class="grid grid-cols-1 justify-items-end mx-10">
         <img class="h-auto max-w-44 rounded-xl drop-shadow-md hover:drop-shadow-2xl p-4 cursor-pointer bg-white"
              src="{{asset('assets/images/ESCUDO-RGB.png')}}" alt="">

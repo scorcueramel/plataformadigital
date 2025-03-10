@@ -22,6 +22,30 @@
             margin-top: -100px !important;
         }
 
+        datalist {
+            position: absolute;
+            max-height: 30em;
+            border: 1px solid #005EA5;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            scrollbar-color: rgba(0, 0, 0, .3) rgba(255, 255, 255, 1);
+            scrollbar-width: thin
+        }
+
+        datalist option {
+            font-size: 1em;
+            padding: 0.6em 1em;
+            background-color: #fff;
+            cursor: pointer;
+            color: #000;
+        }
+
+        datalist option:hover, datalist option:focus {
+            color: #fff;
+            background-color: #005EA5;
+            outline: 0 none;
+        }
     </style>
 @endpush
 @section('content')
@@ -50,7 +74,9 @@
                     >
                     <datalist id="services">
                         @foreach($data as $d)
-                            <option value="{{$d["serviceName"]}}"></option>
+                            <a href="{{$d['url']}}" target="_blank">
+                                <option value="{{$d["serviceName"]}}">{{$d["serviceName"]}}</option>
+                            </a>
                         @endforeach
                     </datalist>
                 </div>
@@ -58,12 +84,12 @@
                 <div class="flex mt-8">
                     <p class="text-xl text-gray-900 dark:text-white me-3">Accesos directos : </p>
                     <div>
-                        <a href="#"
+                        <a href="https://apps.munisurco.gob.pe/pladigsurco/mpv_RegistraDocumento.aspx#no-back-button"
                            role="button"
                            class="text-[#005EA5] border border-[#91F100] hover:border-white hover:bg-white hover:text-[#005EA5] bg-[#91F100] rounded-full text-base font-medium px-3 py-2 text-center cursor-pointer">
                             Mesa de partes
                         </a>
-                        <a href="#"
+                        <a href="https://apps.munisurco.gob.pe/pladigsurco/aip_RegistraSolicitud.aspx#no-back-button"
                            role="button"
                            class="text-[#005EA5] border border-[#91F100] hover:border-white hover:bg-white hover:text-[#005EA5] bg-[#91F100] rounded-full text-base font-medium px-3 py-2  text-center cursor-pointer mx-1">
                             Información pública
